@@ -15,6 +15,11 @@
 		1B4BFBE32A545ABB007FF184 /* FirstScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B4BFBE12A545ABB007FF184 /* FirstScreenViewController.xib */; };
 		1B4BFBE52A54BD91007FF184 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BFBE42A54BD91007FF184 /* Model.swift */; };
 		1B4BFBE72A54BDBA007FF184 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BFBE62A54BDBA007FF184 /* ViewModel.swift */; };
+		1B4BFBEA2A55BF4C007FF184 /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BFBE82A55BF4C007FF184 /* SecondScreenViewController.swift */; };
+		1B4BFBEB2A55BF4C007FF184 /* SecondScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B4BFBE92A55BF4C007FF184 /* SecondScreenViewController.xib */; };
+		1B4BFBF52A55C352007FF184 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BFBF42A55C352007FF184 /* MainTabBarController.swift */; };
+		1BFD7C1D2A55C57500ABFC29 /* ThirdScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFD7C1B2A55C57500ABFC29 /* ThirdScreenViewController.swift */; };
+		1BFD7C1E2A55C57500ABFC29 /* ThirdScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BFD7C1C2A55C57500ABFC29 /* ThirdScreenViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		1B4BFBE12A545ABB007FF184 /* FirstScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstScreenViewController.xib; sourceTree = "<group>"; };
 		1B4BFBE42A54BD91007FF184 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		1B4BFBE62A54BDBA007FF184 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		1B4BFBE82A55BF4C007FF184 /* SecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenViewController.swift; sourceTree = "<group>"; };
+		1B4BFBE92A55BF4C007FF184 /* SecondScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondScreenViewController.xib; sourceTree = "<group>"; };
+		1B4BFBF42A55C352007FF184 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		1BFD7C1B2A55C57500ABFC29 /* ThirdScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreenViewController.swift; sourceTree = "<group>"; };
+		1BFD7C1C2A55C57500ABFC29 /* ThirdScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdScreenViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +70,54 @@
 		1B4BFBCB2A545A67007FF184 /* 4Screen */ = {
 			isa = PBXGroup;
 			children = (
+				1BFD7C1A2A55C50000ABFC29 /* ThirdScreen */,
+				1B4BFBEF2A55C2C0007FF184 /* FourthScreen */,
+				1B4BFBED2A55C29A007FF184 /* SecondScreen */,
+				1B4BFBEC2A55C283007FF184 /* FirstScreen */,
 				1B4BFBCC2A545A67007FF184 /* AppDelegate.swift */,
 				1B4BFBCE2A545A67007FF184 /* SceneDelegate.swift */,
 				1B4BFBD52A545A69007FF184 /* Assets.xcassets */,
 				1B4BFBD72A545A69007FF184 /* LaunchScreen.storyboard */,
 				1B4BFBDA2A545A69007FF184 /* Info.plist */,
+				1B4BFBF42A55C352007FF184 /* MainTabBarController.swift */,
+			);
+			path = 4Screen;
+			sourceTree = "<group>";
+		};
+		1B4BFBEC2A55C283007FF184 /* FirstScreen */ = {
+			isa = PBXGroup;
+			children = (
 				1B4BFBE02A545ABB007FF184 /* FirstScreenViewController.swift */,
 				1B4BFBE12A545ABB007FF184 /* FirstScreenViewController.xib */,
 				1B4BFBE42A54BD91007FF184 /* Model.swift */,
 				1B4BFBE62A54BDBA007FF184 /* ViewModel.swift */,
 			);
-			path = 4Screen;
+			path = FirstScreen;
+			sourceTree = "<group>";
+		};
+		1B4BFBED2A55C29A007FF184 /* SecondScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1B4BFBE82A55BF4C007FF184 /* SecondScreenViewController.swift */,
+				1B4BFBE92A55BF4C007FF184 /* SecondScreenViewController.xib */,
+			);
+			path = SecondScreen;
+			sourceTree = "<group>";
+		};
+		1B4BFBEF2A55C2C0007FF184 /* FourthScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FourthScreen;
+			sourceTree = "<group>";
+		};
+		1BFD7C1A2A55C50000ABFC29 /* ThirdScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1BFD7C1B2A55C57500ABFC29 /* ThirdScreenViewController.swift */,
+				1BFD7C1C2A55C57500ABFC29 /* ThirdScreenViewController.xib */,
+			);
+			path = ThirdScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,7 +180,9 @@
 			files = (
 				1B4BFBE32A545ABB007FF184 /* FirstScreenViewController.xib in Resources */,
 				1B4BFBD92A545A69007FF184 /* LaunchScreen.storyboard in Resources */,
+				1B4BFBEB2A55BF4C007FF184 /* SecondScreenViewController.xib in Resources */,
 				1B4BFBD62A545A69007FF184 /* Assets.xcassets in Resources */,
+				1BFD7C1E2A55C57500ABFC29 /* ThirdScreenViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,8 +193,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B4BFBEA2A55BF4C007FF184 /* SecondScreenViewController.swift in Sources */,
 				1B4BFBE72A54BDBA007FF184 /* ViewModel.swift in Sources */,
+				1B4BFBF52A55C352007FF184 /* MainTabBarController.swift in Sources */,
 				1B4BFBCD2A545A67007FF184 /* AppDelegate.swift in Sources */,
+				1BFD7C1D2A55C57500ABFC29 /* ThirdScreenViewController.swift in Sources */,
 				1B4BFBE22A545ABB007FF184 /* FirstScreenViewController.swift in Sources */,
 				1B4BFBCF2A545A67007FF184 /* SceneDelegate.swift in Sources */,
 				1B4BFBE52A54BD91007FF184 /* Model.swift in Sources */,
@@ -290,7 +342,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 4Screen/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = FirstScreenViewController.xib;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -317,7 +368,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 4Screen/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = FirstScreenViewController.xib;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
