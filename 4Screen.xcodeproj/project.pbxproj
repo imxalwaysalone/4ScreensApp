@@ -13,6 +13,8 @@
 		1B4BFBD92A545A69007FF184 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4BFBD72A545A69007FF184 /* LaunchScreen.storyboard */; };
 		1B4BFBE22A545ABB007FF184 /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BFBE02A545ABB007FF184 /* FirstScreenViewController.swift */; };
 		1B4BFBE32A545ABB007FF184 /* FirstScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B4BFBE12A545ABB007FF184 /* FirstScreenViewController.xib */; };
+		1B4BFBE52A54BD91007FF184 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BFBE42A54BD91007FF184 /* Model.swift */; };
+		1B4BFBE72A54BDBA007FF184 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BFBE62A54BDBA007FF184 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1B4BFBDA2A545A69007FF184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B4BFBE02A545ABB007FF184 /* FirstScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
 		1B4BFBE12A545ABB007FF184 /* FirstScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstScreenViewController.xib; sourceTree = "<group>"; };
+		1B4BFBE42A54BD91007FF184 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		1B4BFBE62A54BDBA007FF184 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				1B4BFBDA2A545A69007FF184 /* Info.plist */,
 				1B4BFBE02A545ABB007FF184 /* FirstScreenViewController.swift */,
 				1B4BFBE12A545ABB007FF184 /* FirstScreenViewController.xib */,
+				1B4BFBE42A54BD91007FF184 /* Model.swift */,
+				1B4BFBE62A54BDBA007FF184 /* ViewModel.swift */,
 			);
 			path = 4Screen;
 			sourceTree = "<group>";
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B4BFBE72A54BDBA007FF184 /* ViewModel.swift in Sources */,
 				1B4BFBCD2A545A67007FF184 /* AppDelegate.swift in Sources */,
 				1B4BFBE22A545ABB007FF184 /* FirstScreenViewController.swift in Sources */,
 				1B4BFBCF2A545A67007FF184 /* SceneDelegate.swift in Sources */,
+				1B4BFBE52A54BD91007FF184 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
