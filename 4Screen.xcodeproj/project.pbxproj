@@ -20,6 +20,8 @@
 		1B4BFBF52A55C352007FF184 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BFBF42A55C352007FF184 /* MainTabBarController.swift */; };
 		1BFD7C1D2A55C57500ABFC29 /* ThirdScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFD7C1B2A55C57500ABFC29 /* ThirdScreenViewController.swift */; };
 		1BFD7C1E2A55C57500ABFC29 /* ThirdScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BFD7C1C2A55C57500ABFC29 /* ThirdScreenViewController.xib */; };
+		1BFD7C212A583DDA00ABFC29 /* FourthScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFD7C1F2A583DDA00ABFC29 /* FourthScreenViewController.swift */; };
+		1BFD7C222A583DDA00ABFC29 /* FourthScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BFD7C202A583DDA00ABFC29 /* FourthScreenViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		1B4BFBF42A55C352007FF184 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		1BFD7C1B2A55C57500ABFC29 /* ThirdScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreenViewController.swift; sourceTree = "<group>"; };
 		1BFD7C1C2A55C57500ABFC29 /* ThirdScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdScreenViewController.xib; sourceTree = "<group>"; };
+		1BFD7C1F2A583DDA00ABFC29 /* FourthScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthScreenViewController.swift; sourceTree = "<group>"; };
+		1BFD7C202A583DDA00ABFC29 /* FourthScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthScreenViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 		1B4BFBEF2A55C2C0007FF184 /* FourthScreen */ = {
 			isa = PBXGroup;
 			children = (
+				1BFD7C1F2A583DDA00ABFC29 /* FourthScreenViewController.swift */,
+				1BFD7C202A583DDA00ABFC29 /* FourthScreenViewController.xib */,
 			);
 			path = FourthScreen;
 			sourceTree = "<group>";
@@ -180,6 +186,7 @@
 			files = (
 				1B4BFBE32A545ABB007FF184 /* FirstScreenViewController.xib in Resources */,
 				1B4BFBD92A545A69007FF184 /* LaunchScreen.storyboard in Resources */,
+				1BFD7C222A583DDA00ABFC29 /* FourthScreenViewController.xib in Resources */,
 				1B4BFBEB2A55BF4C007FF184 /* SecondScreenViewController.xib in Resources */,
 				1B4BFBD62A545A69007FF184 /* Assets.xcassets in Resources */,
 				1BFD7C1E2A55C57500ABFC29 /* ThirdScreenViewController.xib in Resources */,
@@ -197,6 +204,7 @@
 				1B4BFBE72A54BDBA007FF184 /* ViewModel.swift in Sources */,
 				1B4BFBF52A55C352007FF184 /* MainTabBarController.swift in Sources */,
 				1B4BFBCD2A545A67007FF184 /* AppDelegate.swift in Sources */,
+				1BFD7C212A583DDA00ABFC29 /* FourthScreenViewController.swift in Sources */,
 				1BFD7C1D2A55C57500ABFC29 /* ThirdScreenViewController.swift in Sources */,
 				1B4BFBE22A545ABB007FF184 /* FirstScreenViewController.swift in Sources */,
 				1B4BFBCF2A545A67007FF184 /* SceneDelegate.swift in Sources */,
@@ -342,6 +350,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 4Screen/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -368,6 +377,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 4Screen/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
