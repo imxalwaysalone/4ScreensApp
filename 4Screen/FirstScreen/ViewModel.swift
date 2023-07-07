@@ -8,15 +8,14 @@
 import Foundation
 
 class ViewModel {
-    let defaults = UserDefaults.standard
-    
-    static let shared = ViewModel()
     struct UserData:Codable {
         var savedText: String
         var name:String {
             return "\(savedText)"
         }
     }
+    
+    let defaults = UserDefaults.standard
         
         var savedData:[UserData] {
             
@@ -35,7 +34,7 @@ class ViewModel {
         }
         
         func saveText(savedText:String) {
-            let text = UserData(savedText: KeysDefaults.keyText)
+            let text = UserData(savedText: savedText)
             savedData.insert(text, at: 0)
         }
     }

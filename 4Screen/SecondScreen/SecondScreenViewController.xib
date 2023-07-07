@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondScreenViewController" customModule="_Screen" customModuleProvider="target">
             <connections>
-                <outlet property="factsTableView" destination="xye-pv-gnW" id="lsC-ew-t0x"/>
+                <outlet property="factLabel" destination="icS-Ct-aJa" id="CSX-YC-3rq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,30 +19,22 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7n5-fR-oe1">
-                    <rect key="frame" x="159" y="408.66666666666669" width="75" height="35"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                    <connections>
-                        <action selector="requestButton:" destination="-1" eventType="touchUpInside" id="SAY-fv-TKL"/>
-                    </connections>
-                </button>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xye-pv-gnW">
-                    <rect key="frame" x="0.0" y="59" width="393" height="309.66666666666669"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="icS-Ct-aJa">
+                    <rect key="frame" x="10" y="300" width="373" height="252"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="xye-pv-gnW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1LC-Hz-LEs"/>
-                <constraint firstItem="7n5-fR-oe1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9hu-wL-6aH"/>
-                <constraint firstItem="7n5-fR-oe1" firstAttribute="top" secondItem="xye-pv-gnW" secondAttribute="bottom" constant="40" id="Llg-Ry-9C1"/>
-                <constraint firstItem="xye-pv-gnW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Rjd-hi-eb7"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xye-pv-gnW" secondAttribute="trailing" id="WCV-WA-Tz6"/>
-                <constraint firstItem="7n5-fR-oe1" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="s2g-V2-jDe"/>
+                <constraint firstItem="icS-Ct-aJa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="2Cd-si-eKx"/>
+                <constraint firstAttribute="trailing" secondItem="icS-Ct-aJa" secondAttribute="trailing" constant="10" id="9lB-Gj-Ik2"/>
+                <constraint firstItem="icS-Ct-aJa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="300" id="ScN-8f-5Ih"/>
+                <constraint firstAttribute="bottom" secondItem="icS-Ct-aJa" secondAttribute="bottom" constant="300" id="mZh-0k-jO2"/>
             </constraints>
-            <point key="canvasLocation" x="36" y="20"/>
+            <point key="canvasLocation" x="35.877862595419849" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>

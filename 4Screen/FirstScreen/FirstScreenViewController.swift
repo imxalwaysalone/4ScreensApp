@@ -9,15 +9,16 @@ import UIKit
 
 class FirstScreenViewController: UIViewController {
     let defaults = UserDefaults.standard
+    var viewModel = ViewModel()
     
-    @IBOutlet weak var infoTableView: UITableView! {
+    @IBOutlet private var infoTableView: UITableView! {
         didSet {
             infoTableView.dataSource = self
             infoTableView.delegate = self
         }
     }
-    @IBOutlet weak var propertiesOfButton: UIButton!
-    @IBOutlet weak var textToSave: UITextField!
+    @IBOutlet private var propertiesOfButton: UIButton!
+    @IBOutlet private var textToSave: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,13 +33,14 @@ class FirstScreenViewController: UIViewController {
         let savedText = textToSave.text!
         
         if !savedText.isEmpty {
-            ViewModel.shared.saveText(savedText: KeysDefaults.keyText)
+            viewModel.saveText(savedText: savedText)
+            infoTableView.reloadData()
         }
     }
 }
 extension FirstScreenViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        ViewModel.shared.savedData.count
+        viewModel.savedData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -49,7 +51,7 @@ extension FirstScreenViewController: UITableViewDataSource, UITableViewDelegate 
         } else {
             cell = UITableViewCell()
         }
-        cell.textLabel?.text = ViewModel.shared.savedData[indexPath.row].name
+        cell.textLabel?.text = viewModel.savedData[indexPath.row].name
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

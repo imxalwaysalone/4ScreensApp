@@ -11,20 +11,11 @@ struct Facts : Decodable {
     var fact : String
 }
 class SecondScreenViewController: UIViewController {
-
-    @IBOutlet weak var factsTableView: UITableView! {
-        didSet {
-            factsTableView.dataSource = self
-            factsTableView.delegate = self
-        }
-    }
-    var model = [Facts]()
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.factsTableView.reloadData()
-    }
+    @IBOutlet weak var factLabel: UILabel!
     
-    @IBAction func requestButton(_ sender: UIButton) {
+    var model = [Facts]()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         guard let url = URL(string: "https://api.api-ninjas.com/v1/facts") else { return }
         var request = URLRequest(url: url)
@@ -41,33 +32,16 @@ class SecondScreenViewController: UIViewController {
             do {
                 let json = try JSONSerialization.jsonObject(with: data)
                 let decoder = JSONDecoder()
-                let fact = try decoder.decode([Facts].self, from: data)
-                self.model = fact
+                let factsArray = try decoder.decode([Facts].self, from: data)
+                DispatchQueue.main.async { [weak self] in
+                    guard let self = self else { return }
+                    
+                    self.factLabel.text = factsArray.first?.fact
+                }
             } catch {
                print(error)
             }
         }.resume()
     }
 }
-extension SecondScreenViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return model.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell:UITableViewCell!
-        
-        if let dCell = tableView.dequeueReusableCell(withIdentifier: "dCell") {
-            cell = dCell
-        } else {
-            cell = UITableViewCell()
-        }
-        cell.textLabel?.text = model[indexPath.row].fact
-        return cell
-    }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
-    }
-    
-    
-}
+

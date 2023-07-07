@@ -14,6 +14,7 @@ class ThirdScreenViewController: UIViewController {
     }
 
     @IBAction func actionButton(_ sender: UIButton) {
+        UserDefaults.standard.setValue(true, forKey: "isWebViewShown")
         let vc = FourthScreenViewController()
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)
