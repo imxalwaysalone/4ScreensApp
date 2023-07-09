@@ -31,7 +31,7 @@ class FirstScreenViewController: UIViewController {
     }
     @IBAction func saveButton(_ sender: Any) {
         let savedText = textToSave.text!
-        
+        self.textToSave.text = nil
         if !savedText.isEmpty {
             viewModel.saveText(savedText: savedText)
             infoTableView.reloadData()
